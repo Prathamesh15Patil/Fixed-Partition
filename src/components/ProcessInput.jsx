@@ -31,6 +31,7 @@ function ProcessInput({ processSizes, setProcessSizes }) {
             Add Process Size (KB):
           </label>
            <input
+           type='Number'
             id="processSize"
             value={newProcessSize}
             onChange={(e) => setNewProcessSize(e.target.value)}
