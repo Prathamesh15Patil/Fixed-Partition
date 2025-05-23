@@ -9,6 +9,7 @@ function ConfigForm({ totalMemory, setTotalMemory, partitionSize, setPartitionSi
           Total Memory (KB):
         </label>
         <input
+        type='number'
           id="totalMemory"
           value={totalMemory}
           onChange={(e) => setTotalMemory(parseInt(e.target.value) || 0)} // Parse to integer, default to 0 if invalid or empty
